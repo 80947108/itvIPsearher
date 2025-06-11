@@ -5,7 +5,10 @@ on:
     - cron: '0 0 */2 * *'  # 每两天的午夜12点（UTC时间）运行
  #   - cron: '0 14 * * *'  # 每天 UTC 时间 14:00（北京时间 22:00）运行
   workflow_dispatch:  # 允许手动触发任务
-
+  
+permissions:
+  contents: write
+  
 jobs:
   scan:
     runs-on: ubuntu-latest
