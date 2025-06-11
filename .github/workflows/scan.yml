@@ -44,6 +44,6 @@ jobs:
           git pull --rebase
     
           # 推送更改
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/80947108/itvIPsearcher.git HEAD:main
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/80947108/itvIPsearher.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
